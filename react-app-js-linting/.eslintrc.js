@@ -1,7 +1,8 @@
 module.exports = {
     "plugins": [
         "react", 
-        "jsx-a11y"
+        "jsx-a11y", 
+        "html"
     ],
     "parserOptions": {
         "ecmaVersion": 6,
