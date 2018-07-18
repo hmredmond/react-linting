@@ -57,5 +57,14 @@ module.exports = {
          "no-magic-numbers":   1,
          "max-len":            [1, 140, 4],
          "react/prefer-es6-class": 1,
+         "require-jsdoc": ["warn", {
+            "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": false,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
+                "FunctionExpression": false
+            }
+        }]
     }
 }
