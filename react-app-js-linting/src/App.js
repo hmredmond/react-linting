@@ -52,7 +52,9 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title"><div>Welcome to React</div></h1>
         </header>
-        <span className="App-intro">
+
+
+          <span className="App-intro"  >
           <div>something here</div>
           To get started, edit <code>src/App.js</code> and save to reload.
           <img src="sdlksd.jpg" alt="this must be present"/>
