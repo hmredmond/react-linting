@@ -25,6 +25,7 @@ module.exports = {
     "rules": {
          // first argument: 0 - silent, 1 - warning, 2 - error
          "strict":             [ 2, "safe" ],
+         "complexity":          ["warn", 2],
          "no-debugger":        2,
          "brace-style": [
              2,
@@ -54,7 +55,7 @@ module.exports = {
          "no-unreachable":     1,
          "no-unused-expressions": 1,
          "no-magic-numbers":   1,
-         "max-len":            [1, 80, 4],
+         "max-len":            [1, 140, 4],
          "react/prefer-es6-class": 1,
     }
 }
