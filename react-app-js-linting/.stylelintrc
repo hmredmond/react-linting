@@ -1,6 +1,5 @@
 {
-  "extends": "stylelint-config-standard", 
-  "plugins": [
+   "plugins": [
 		"stylelint-order"
 	],
 	"rules": {
@@ -8,6 +7,67 @@
 			"custom-properties",
 			"declarations"
 		],
-		"order/properties-alphabetical-order": true
+		"order/properties-alphabetical-order": true, 
+		"color-hex-case": "upper",
+		"color-hex-length": "long",
+		"color-no-invalid-hex": true,
+		"comment-no-empty": true,
+		"declaration-no-important": true,
+		"font-family-name-quotes": "always-where-required",
+		"font-family-no-duplicate-names": true,
+		"font-family-no-missing-generic-family-keyword": true,
+		"function-name-case": "lower",
+		"indentation": "tab",
+		"length-zero-no-unit": true,
+		"number-leading-zero": "never",
+		"number-no-trailing-zeros": true,
+		"property-case": "lower",
+		"value-list-comma-newline-after": "always-multi-line",
+		"value-list-comma-space-after": "always-single-line",
+		"value-list-comma-space-before": "never", 
+		"declaration-colon-space-after": "always",
+		"declaration-colon-space-before": "never", 
+		"declaration-block-semicolon-newline-after" : "always", 
+		"declaration-block-trailing-semicolon" : "always",
+		"declaration-block-single-line-max-declarations" : 1,
+		"selector-max-compound-selectors" : 3,
+		"selector-combinator-space-after" : "always",
+		"selector-list-comma-newline-after" : "always",
+		"function-max-empty-lines": 0,
+		"max-empty-lines": 1,
+		"no-duplicate-selectors" : true,
+		"no-extra-semicolons" : true,
+		"block-no-empty" : true, 
+		"value-list-max-empty-lines": 0, 
+		"at-rule-empty-line-before": [
+			"always",
+			{
+				"except": [
+					"first-nested"
+				]
+			}
+		],
+		"custom-property-empty-line-before": [
+			"always",
+			{
+				"except": [
+					"after-custom-property",
+					"first-nested"
+				]
+			}
+		],
+		"declaration-empty-line-before": [
+			"always",
+			{
+				"except": [
+					"after-declaration",
+					"first-nested"
+				]
+			}
+		],
+		"block-closing-brace-empty-line-before": "never",
+		"rule-empty-line-before": [
+			"always-multi-line"
+		]
 	}
 }
