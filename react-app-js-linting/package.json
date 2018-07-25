@@ -17,14 +17,15 @@
     "eject": "react-scripts eject",
     "lint:css": "node_modules/.bin/stylelint 'src/**/*.css' --fix",
     "lint:es6": "node_modules/.bin/eslint 'src/*.{js,jsx}'",
+    "watch": "node_modules/.bin/esw -w --clear --fix src/*.{js,jsx}",
     "lint": "run-s lint:**",
     "format": "node ./format.js",
     "prettier:fix": "node_modules/.bin/eslint '**/*.{js,jsx}' --fix",
     "format:css": "node_modules/.bin/csscomb src/*.css",
     "document": "node_modules/.bin/documentation build src/** -f html -o docs",
     "precommit": "npm run lint & npm run document",
-    "prepush": "console.log('do nothing')",
-    "lint:watch": "node_modules/.bin/esw -w --clear --fix src/*.{js,jsx}"
+    "prepush": "console.log('do nothing')"
+
   },
   "devDependencies": {
     "csscomb": "^4.2.0",
