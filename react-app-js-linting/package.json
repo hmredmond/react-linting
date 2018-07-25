@@ -22,8 +22,8 @@
     "prettier:fix": "node_modules/.bin/eslint '**/*.{js,jsx}' --fix",
     "format:css": "node_modules/.bin/csscomb src/*.css",
     "document": "node_modules/.bin/documentation build src/** -f html -o docs",
-    "precommit": "npm run lint && npm test",
-    "prepush": "npm run lint",
+    "precommit": "npm run lint & npm run document",
+    "prepush": "console.log('do nothing')",
     "lint:watch": "node_modules/.bin/esw -w --clear --fix src/*.{js,jsx}"
   },
   "devDependencies": {
