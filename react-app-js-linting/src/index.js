@@ -5,5 +5,4 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App classes="{something : boo}" />, document.getElementById('root'));
-
 registerServiceWorker();
