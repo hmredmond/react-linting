@@ -23,8 +23,7 @@
     "prettier:fix": "node_modules/.bin/eslint '**/*.{js,jsx}' --fix",
     "format:css": "node_modules/.bin/csscomb src/*.css",
     "document": "node_modules/.bin/documentation build src/** -f html -o docs",
-    "precommit": "npm run document && npm run lint",
-    "prepush": "console.log('do nothing')"
+    "precommit": "npm run document && npm run lint"
   },
   "devDependencies": {
     "csscomb": "^4.2.0",
