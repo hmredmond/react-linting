@@ -12,10 +12,12 @@ const styles = {
   }
 };
 
-/*
- * Main App class
- * @class App
- * @extends {React.Component}
+/**
+ * The main Application Class
+ *
+ * @version 1.0.1
+ * @public
+ * @author [Hannah Redmond](https://github.com/hmredmond)
  */
 class App extends React.Component {
 

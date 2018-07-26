@@ -27,7 +27,7 @@
                 "bracketSpacing": false,
                 "jsxBracketSameLine": true,
                 "parser": "babylon",
-                "tabWidth" : 2, 
+                "tabWidth" : 1, 
                 "useTabs" : true, 
                 "printWidth": 140,
                 "singleQuote": true,
