@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 const styles = {
@@ -26,7 +26,7 @@ class App extends Component {
 	}
 
 	progress = () => {
-		const {completed} = this.state;
+		const { completed } = this.state;
 		if (completed === 100) {
 			this.setState({
 				completed: 0
