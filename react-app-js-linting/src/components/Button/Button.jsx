@@ -1,6 +1,15 @@
-// Clean
-import React from "react";
+import React, { Component } from "react";
 
-export const Button = ({label}) => <button>{
-  label
-  }</button>;
+export default class TestButton extends Component {
+  handleClick = () => {
+    console.log('Boo');
+  };
+
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.props.label}fff
+      </button>
+      );
+  }
+}

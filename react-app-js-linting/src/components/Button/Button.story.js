@@ -1,11 +1,18 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button } from './Button';
+import Button from './Button';
+import { withKnobs, text } from "@storybook/addon-knobs";
 
-storiesOf('Button', module)
-  .add('with text', () => <Button label="Hello World" />, {
-    notes: 'A very simple component'
-  })
-  .add('with some emoji', () => <Button label="😀 😎 👍 💯" />, {
-    notes: 'A very simple component'
-  });
+
+storiesOf("Buttons", module)
+  .addDecorator(withKnobs)
+
+  // Button
+  .add("Button - primary", () => (
+
+    <Button
+    label={text("Text", "Hello Button")}
+    >       
+      </Button>
+
+  ))
